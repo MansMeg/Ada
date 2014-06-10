@@ -1,5 +1,7 @@
-Ada
+#Botten Ada
 ===
+
+Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. 
 
 ### Adas motor
  
