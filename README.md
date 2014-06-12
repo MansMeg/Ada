@@ -1,7 +1,7 @@
 # Botten Adas hem
 ===
 
-Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. Här finns den data som Ada användr sig av. En del av denna data kommer från [Novus](http://www.novus.se/vaeljaropinionen/ekotnovus-poll-of-polls.aspx) sammanställning men sedan april har vi uppdaterat materialet själva.
+Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. Här finns den data som Ada användr sig av. En del av denna data kommer från [Novus](http://www.novus.se/vaeljaropinionen/ekotnovus-poll-of-polls.aspx) sammanställning men sedan april 2014 har vi uppdaterat materialet själva.
 
 
 ### Adas motor (tekniska detaljer)
@@ -23,8 +23,8 @@ Vi har tittat på andra prediktorer utöver SCB:s majundersökning som arbetslö
 Modellen skattas med Markov chain monte carlo (MCMC) och då framförallt med Gibbs sampling (med en burnin på 500, thining på 4 och 2000 MCMC samples). Med undantag från priorn på valdagen är samtliga priors vaga (vague) men korrekta (proper).
  
 ### Adas brister
-Modellen svaghet just nu är dels att vi inte på ett naturligt sätt kan inkludera FI i modellen då det saknas historisk opinionsdata för att få en bilda av hur FI samvarierar med andra partier. 
+Modellen svaghet just nu är dels att vi inte på ett naturligt sätt kan inkludera FI i modellen då det saknas historisk opinionsdata för att få en bild av hur FI samvarierar med andra partier. 
 
-En annan svaghet är att modellen som sådan inte fullt tar hänsyn till att de mindre partierna daglig variation ökar under valrörelsen. Det gör att strukturella prediktioner har behövt extrapolera den strukturella prediktionen för att få in denna valrörelseeffekt. 
+En annan svaghet är att modellen som sådan inte fullt tar hänsyn till att de mindre partierna dagliga variation ökar under valrörelsen. Det gör att strukturella prediktioner har behövs korrigerats något för att få in dessa effekter. 
 
-En sista svaghet med modellen är att sannolikheten för extrema utfall inte modelleras särskilt bra då modellen bygger på normalfördelningantaganden. För mindre partier skulle en multivariat t-fördelning eller multivariat gammafördelning troligtvis vara bättre för att fånga in extrema utfall bland mindre partier (som KD 1998, FP 2002 och FP 1985).
+En sista svaghet med modellen är att sannolikheten för extrema utfall inte modelleras särskilt bra då modellen bygger på normalfördelningantaganden. För mindre partier skulle en multivariat t-fördelning eller multivariat gammafördelning troligtvis vara bättre för att fånga in extrema utfall bland mindre partier (som KD 1998, FP 2002 och FP 1985). Detta är varför vi inte använder oss av sannolikheter som är mindre än 5%.
