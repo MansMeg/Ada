@@ -1,8 +1,10 @@
 # Botten Adas hem
 ===
 
-Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. Här finns den data som Ada användr sig av. En del av denna data kommer från [Novus](http://www.novus.se/vaeljaropinionen/ekotnovus-poll-of-polls.aspx) sammanställning men sedan april 2014 har vi uppdaterat materialet själva.
+Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. Här finns den data som Ada använder sig av.
 
+### Adas data 
+Den data som används för prognoserna går att finna [här](https://github.com/MansMeg/Ada/blob/master/Data/Polls.csv) och en beskrivning av materialet finns [här](https://github.com/MansMeg/Ada/blob/master/Data/DATA_README.md).
 
 ### Adas motor (tekniska detaljer)
  
