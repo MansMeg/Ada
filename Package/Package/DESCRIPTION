@@ -1,0 +1,16 @@
+Package: bottenada
+Type: Package
+Title: What the package does (short line)
+Version: 0.1
+Date: 2014-06-12
+Author: Mans Magnusson
+Maintainer: Mans Magnusson <mans.magnusson@gmail.com>
+Description: The code behind botten Ada, bottenada.se .
+License: AGPL
+Suggests:
+    bayesm,
+    dlm,
+    lubridate,
+    stringr,
+    data.table,
+    ggplot2
