@@ -33,7 +33,7 @@ print.ElectPred <- function(x){
 #'
 #' @export
 #' 
-summary.ElectPred <- function(x, lowLimit=0.04, day=NULL, alpha=0.5){
+summary.ElectPred <- function(x, lowLimit=0.04, day=NULL, alpha=0.05){
   print(x)
   cat("\n\nExpected results:\n")
   expected <- as.matrix(ExpectPred(x, day=day))
@@ -45,8 +45,8 @@ summary.ElectPred <- function(x, lowLimit=0.04, day=NULL, alpha=0.5){
   print(t(apply(probsResult, 2, quantile, probs=c(alpha/2, .5, 1 - alpha/2))))
     
   probs <- ElectionProb(x=x, lowLimit=lowLimit)
-  cat("\n\nParliment results probability (with limit set to ",lowLimit,"):", sep="")
-  print(t(apply(probs, 2, quantile, probs=c(alpha/2, 0.25, 0.5, 0.75, 1 - alpha/2))))
+  cat("\n\nParliment results probability (with limit set to ",lowLimit,"):\n", sep="")
+  print(t(apply(probs, 2, quantile, probs=c(alpha/2, 0.5, 1 - alpha/2))))
   
   return(invisible("PrintOut"))
 }

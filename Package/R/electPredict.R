@@ -2,19 +2,27 @@
 #' electPredict
 #' 
 #' @details
-#' Creates a prediction for a multiparty system.
+#' Creates a multivariate prediction for a multiparty election.
 #' 
 #' @param priors A list of prior specifications for the model.
-#' @param parameters Day of election, day of prediction
-#' @param data a dataset with prespecified time variable and house variable. See details.
+#' @param parameters A list of parameter specifications for the model.
+#' @param data A data.frame with prespecified variables in parameters. 
 #' 
 #' @details
-#' the dataset should contain each poll as a row. The main variables needed is \code{time} 
-#' (date of the poll - needs to be in POSIX format), \code{n} the numer of observation in the poll,
-#' and \code{house}, a factor variable of polling house.
+#' This function runs the 
 #' 
 #' @return 
-#' An electionPredict object.
+#' An electionPredict object that contains both input and estimates. 
+#' The stored inputs are:
+#'  \item{\code{data}}{The data.frame used for prediction}
+#'  \item{\code{parameters}}{The parameters used}
+#'  \item{\code{priors}}{The priors used}
+#' 
+#' 
+#' The parameters are contains (as samples) in:
+#'  \item{\code{bt}}{The probability distribution for each party and time period (as array)}
+#'  \item{\code{Wb}}{The covariance matrix distribution}
+#'  \item{\code{tau2}}{The house effects distribution}
 #' 
 #' @export
 
