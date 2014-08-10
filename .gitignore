@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 *.Rproj
+demo.html
+demofile.Rdata
+demo.Rmd
+.gitignore
