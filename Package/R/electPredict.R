@@ -1,16 +1,14 @@
 #' @title
 #' electPredict
 #' 
-#' @details
+#' @description
 #' Creates a multivariate prediction for a multiparty election.
 #' 
 #' @param priors A list of prior specifications for the model.
 #' @param parameters A list of parameter specifications for the model.
 #' @param data A data.frame with prespecified variables in parameters. 
 #' 
-#' @details
-#' This function runs the 
-#' 
+#'  
 #' @return 
 #' An electionPredict object that contains both input and estimates. 
 #' The stored inputs are:

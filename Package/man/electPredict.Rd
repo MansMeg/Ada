@@ -26,9 +26,6 @@ The parameters are contains (as samples) in:
  \item{\code{tau2}}{The house effects distribution}
 }
 \description{
-electPredict
-}
-\details{
 Creates a multivariate prediction for a multiparty election.
 }
 
