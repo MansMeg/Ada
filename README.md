@@ -1,12 +1,17 @@
 # Botten Adas hem
 ===
 
-Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. Här finns den data som Ada använder sig av.
+Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat. 
 
 ### Adas data 
-Den data som används för prognoserna går att finna [här](https://github.com/MansMeg/Ada/blob/master/Data/Polls.csv) och en beskrivning av materialet finns [här](https://github.com/MansMeg/Ada/blob/master/Data/DATA_README.md).
+Den data som används för prognoserna går att finna [här](https://github.com/MansMeg/SwedishPolls). 
 
-### Adas motor (tekniska detaljer)
+### Adas kod
+Den kod som används för Ada finns nu upplagt som ett R-paket under [Package](https://github.com/MansMeg/SwedishPolls/tree/master/Package).
+
+[Här](https://github.com/MansMeg/Ada/blob/master/Demonstration/demo.md) har vi lagt upp ett exempel på en analys som liknar den på [bottenada.se](http://www.bottenada.se).
+
+### Adas modell
  
 Ada bygger på en [multivariat dynamisk linjär bayesiansk modell](http://www.jstatsoft.org/v36/i12/paper). Denna typ av modell utgår från att opinionsundersökningar mäter en underliggande ”sann” partisympatinivå för varje parti med ett visst slumpmässigt mätfel. I stort är det samma typ av modell som används i ett [Kalman filter](http://sv.wikipedia.org/wiki/Kalmanfilter).
 
