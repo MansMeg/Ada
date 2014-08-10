@@ -7,9 +7,9 @@ Ada är en bayesiansk modell som räknar ut sannolikheten för olika valresultat
 Den data som används för prognoserna går att finna [här](https://github.com/MansMeg/SwedishPolls). 
 
 ### Adas kod
-Den kod som används för Ada finns nu upplagt som ett R-paket under [Package](https://github.com/MansMeg/SwedishPolls/tree/master/Package).
+Den kod som används för Ada finns nu upplagt som ett R-paket under [Package](https://github.com/MansMeg/Ada/tree/master/Package).
 
-[Här](https://github.com/MansMeg/Ada/blob/master/Demonstration/demo.md) har vi lagt upp ett exempel på en analys som liknar den på [bottenada.se](http://www.bottenada.se).
+[Här](https://github.com/MansMeg/Ada/blob/master/Demonstration/demo.md) har vi lagt upp ett exempel på en analys som liknar den på [bottenada.se](http://www.bottenada.se) (på engelska).
 
 ### Adas modell
  
