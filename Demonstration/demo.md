@@ -13,6 +13,7 @@ As the first step we need to install the package from github to [R](http://www.r
 
 ```r
 library(devtools)
+library(repmis)
 library(lubridate)
 devtools::install_github(repo = "Ada", username = "MansMeg", subdir = "Package", 
     dependencies = TRUE)
@@ -29,23 +30,17 @@ We use the polling data from Sweden that is contained in the SwedishPolls github
 
 
 ```r
-devtools::source_gist("https://gist.github.com/MansMeg/c0527fd762580006daed", 
-    quiet = TRUE)
-```
+data_url <- "https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv"
 
-```
-## SHA-1 hash of file is e3465b3ed544ab9c6fb86a3fd9929fc2e4f51244
+polls <- repmis::source_data(data_url, sep = ",", dec = ".", header = TRUE)
 ```
 
 ```r
-polls <- source_GitHubData("https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv", 
-    sep = ",", dec = ".", header = TRUE)
-```
+Downloading data from: https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv 
 
+SHA-1 hash of the downloaded data file is:
+fbfb151fd9484ccd4fb0ef58f91c5459dfad559c
 ```
-## Loading required package: httr
-```
-
 
 ### Some preprocessing of the data
 
