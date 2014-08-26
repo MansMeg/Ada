@@ -30,7 +30,7 @@ Vi har tittat på andra prediktorer utöver SCB:s majundersökning som arbetslö
 Modellen skattas med Markov chain monte carlo (MCMC) och då framförallt med Gibbs sampling (med en burnin på 500, thining på 4 och 2000 MCMC samples). Med undantag från priorn på valdagen är samtliga priors vaga (vague) men korrekta (proper).
  
 ### Adas brister
-Modellen svaghet just nu är dels att vi inte på ett naturligt sätt kan inkludera FI i modellen då det saknas historisk opinionsdata för att få en bild av hur FI samvarierar med andra partier. 
+F! finns med i modellen men eftersom det är relativt få opinionsundersökningar för F! så är det svårare att uppskatta rörligheten i F!:s väljare. Det gör att just F!:s del i modellen är mindre säker än för de övriga partierna, helt enkelt mer experimentellt än övriga Ada. =)
 
 En annan svaghet är att modellen som sådan inte fullt tar hänsyn till att de mindre partierna dagliga variation ökar under valrörelsen. Det gör att strukturella prediktioner har behövs korrigerats något för att få in dessa effekter. 
 
